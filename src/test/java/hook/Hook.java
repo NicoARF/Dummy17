@@ -11,7 +11,7 @@ public class Hook {
 
     public Hook(){
         // Obtener la ruta absoluta del ChromeDriver
-        String chromeDriverPath = System.getProperty("user.dir") + "/drivers/chrome/chromedriver";
+        System.getProperty("webdriver.chrome.driver", "/drivers/chrome/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         options.addArguments("--disable-popup-blocking");

@@ -19,12 +19,4 @@ public class TestLoginSauce extends Hook {
         loginPage.clickLogin();
         Assert.assertTrue(inventoryPage.valTitle());
     }
-    /*@Test
-    public void loginLockedUser(){
-        loginPage.sendKeysUsername("locked_out_user");
-        loginPage.sendKeysPassword("secret_sauce");
-        loginPage.clickLogin();
-        Assert.assertEquals(loginPage.valMessageError(), "Epic sadface: Sorry, this user has been locked out.");
-    }*/
-
 }
