@@ -10,8 +10,12 @@ public class Hook {
     public WebDriver driver;
 
     public Hook(){
-        // Obtener la ruta absoluta del ChromeDriver
-        System.getProperty("webdriver.chrome.driver", "/drivers/chrome/chromedriver");
+        if(System.getProperty("os.name").equals("Mac OS X")) {
+            // Obtener la ruta absoluta del ChromeDriver
+            System.getProperty("webdriver.chrome.driver", "/drivers/chrome/chromedriverMac");
+        }else{
+            System.getProperty("webdriver.chrome.driver", "/drivers/chrome/chromedriverLinux");
+        }
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
         options.addArguments("--disable-popup-blocking");
