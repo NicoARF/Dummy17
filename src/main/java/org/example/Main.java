@@ -15,5 +15,6 @@ public class Main {
         for (int i = 1; i <= val; i++) {
             logger.info("i = " + i);
         }
+        logger.info("Finish");
     }
 }
