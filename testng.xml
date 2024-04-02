@@ -1,5 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="AllLogin">
+    <!-- Configuración de informes -->
+    <listeners>
+        <!-- Generación de informes XML -->
+        <listener class-name="org.testng.reporters.XMLReporter" />
+    </listeners>
     <test name="Test1">
         <classes>
             <class name="sauceDemo.TestLoginSauce"/>
