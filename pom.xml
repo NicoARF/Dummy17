@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <sonar.organization>nicoarf</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.source>.</sonar.source>
         <sonar.exclusions>src/main/**/*</sonar.exclusions>
 
         <selenium.version>4.19.1</selenium.version>
