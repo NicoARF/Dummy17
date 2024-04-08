@@ -9,8 +9,6 @@ public class Main {
     private static final Logger logger = Logger.getLogger(Main.class.getName());
     private static final int val = 5;
     public static void main(String[] args) {
-        logger.info("Hello and welcome!");
-
 
         for (int i = 1; i <= val; i++) {
             logger.info("i = " + i);
